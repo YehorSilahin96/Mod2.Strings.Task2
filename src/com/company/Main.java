@@ -14,7 +14,7 @@ public class Main {
 
         if (ans.equals("Yes")) {
 
-            Calendar res = Calendar.getInstance();
+            Calendar res = Calendar.getInstance(); // Please, find an use the other ways to print date and time using java 8
 
             System.out.println("Current Date and Time :");
             System.out.format("%tB %te, %tY%n", res, res, res);
