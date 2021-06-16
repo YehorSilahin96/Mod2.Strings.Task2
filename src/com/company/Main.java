@@ -12,6 +12,7 @@ public class Main {
         System.out.println("Do you want to know actual date and time ?" + " Enter Yes/No");
         String ans = sc.nextLine();
 
+        //inquiry
         if (ans.equals("Yes")) {
 
             Calendar res = Calendar.getInstance();
