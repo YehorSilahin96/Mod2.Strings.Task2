@@ -16,7 +16,7 @@ public class Main {
         //inquiry
         if (ans.equals("Yes")) {
 
-            LocalDate date = LocalDate.now();         // Date/Time in Java 8
+            LocalDate date = LocalDate.now();         // output Date/Time in Java 8
             LocalTime time = LocalTime.now();
             System.out.println("Current date and time:" );
             System.out.format("%tB %te, %tY%n", date, date, date);
