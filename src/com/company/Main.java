@@ -1,6 +1,7 @@
 package com.company;
 
-import java.util.Calendar;
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.Scanner;
 
 public class Main {
@@ -9,20 +10,20 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Do you want to know actual date and time ?" + " Enter Yes/No");
+        System.out.println("Do you want to know actual date and time ? Enter Yes/No");
         String ans = sc.nextLine();
 
         //inquiry
         if (ans.equals("Yes")) {
 
-            Calendar res = Calendar.getInstance();
-
-            System.out.println("Current Date and Time :");
-            System.out.format("%tB %te, %tY%n", res, res, res);
-            System.out.format("%tl:%tM %tp%n", res, res, res);
+            LocalDate date = LocalDate.now();         // Date/Time in Java 8
+            LocalTime time = LocalTime.now();
+            System.out.println("Current date and time:" );
+            System.out.format("%tB %te, %tY%n", date, date, date);
+            System.out.format("%tl:%tM %tp%n", time, time, time);
         }
 
-        if (ans.equals("No")) {
+        else if (ans.equals("No")) { //Fixed cycle
 
             System.out.println("OMG, you're so bored !");
 
