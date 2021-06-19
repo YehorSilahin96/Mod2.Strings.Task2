@@ -5,16 +5,17 @@ import java.time.LocalTime;
 import java.util.Scanner;
 
 public class Main {
+    static final String ans1 = "Yes";
+    static final String ans2 = "No";
 
     public static void main(String[] args) {
-
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Do you want to know actual date and time ? Enter Yes/No");
         String ans = sc.nextLine();
 
         //inquiry
-        if (ans.equals("Yes")) {
+        if (ans.equals(ans1)) {
 
             LocalDate date = LocalDate.now();         // output Date/Time in Java 8
             LocalTime time = LocalTime.now();
@@ -23,7 +24,7 @@ public class Main {
             System.out.format("%tl:%tM %tp%n", time, time, time);
         }
 
-        else if (ans.equals("No")) { //Fixed cycle
+        else if (ans.equals(ans2)) { //Fixed cycle
 
             System.out.println("OMG, you're so bored !");
 
